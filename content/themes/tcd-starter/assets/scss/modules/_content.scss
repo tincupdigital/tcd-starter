@@ -1,0 +1,69 @@
+/**
+ * _content.scss
+ */
+
+/*
+Site
+ */
+.site {
+  background-color: white;
+}
+.site-content {}
+
+/*
+Comments
+ */
+.comments-area {
+  margin-bottom: 2rem;
+
+  .comment-list,
+  .children {
+    list-style-type: none;
+  }
+  .comment-list {
+    padding-left: 0;
+  }
+  .comment-body {
+    padding: 1rem;
+    margin-bottom: $margin-p;
+    border: 1px solid $border-color;
+    border-radius: 2px;
+  }
+  .comment-content {
+    p {
+      margin: 0.5rem 0 0.65rem;
+    }
+  }
+  ol.children {
+    padding-left: $margin-p;
+  }
+}
+.comment-author {
+  margin-bottom: 0.25rem;
+
+  img, b, span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+/*
+Navigation
+ */
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+  margin: 0 0 $margin-p;
+  overflow: hidden;
+}
+.nav-previous,
+.nav-next {
+  width: 50%;
+}
+.nav-previous {
+  float: left;
+}
+.nav-next {
+  float: right;
+  text-align: right;
+}

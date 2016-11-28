@@ -1,0 +1,50 @@
+/**
+ * _header.scss
+ */
+
+/*
+Header
+ */
+.site-header {}
+
+/*
+Navigation
+ */
+.main-nav {
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+.main-navigation {}
+
+/*
+Mobile Nav
+ */
+.main-nav__mobile {
+  position: fixed;
+  padding: $margin-p;
+  top: 0; left: 0;
+  width: 75%;
+  height: 100%;
+  transition: all 0.375s ease;
+  overflow-x: hidden;
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  ul ul {
+    margin-left: $margin-p;
+  }
+}
+.site {
+  position: relative;
+  @include animate(transform, 0.375s);
+
+  &.pushed {
+    transform: translateX(75%);
+  }
+}

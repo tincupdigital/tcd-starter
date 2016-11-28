@@ -1,0 +1,54 @@
+/**
+ * _classes.scss
+ */
+
+/*
+Margins
+ */
+.mtp { margin-top: $margin-p !important; }
+.mbp { margin-bottom: $margin-p !important; }
+
+/*
+Media Queries
+ */
+@media (max-width: $break-sm) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+@media (max-width: $break-md) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+@media (max-width: $break-lg) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+
+@media (min-width: $break-sm) {
+  .visible-xs {
+    display: none !important;
+  }
+}
+@media (min-width: $break-md) {
+  .visible-sm {
+    display: none !important;
+  }
+}
+@media (min-width: $break-lg) {
+  .visible-md {
+    display: none !important;
+  }
+}
+
+/*
+Mixins
+ */
+.sr-only, .srt {
+  @include sr-only;
+}
+.val {
+  @include vert-align;
+}
